@@ -26,7 +26,11 @@ def test_array_for_2_identical_elements
    assert_equal(2, results)
 end
 
-
+def test_array_for_2_identical_elements_and_1_non_identical_element
+    results =
+    find_max_consecutive_identical_elements([1,1,2])
+   assert_equal(2, results)
+end 
 
 
 

@@ -3,6 +3,8 @@ if any_array.length==0
 0
 elsif any_array[0] == any_array[1]
 2
+elsif any_array[-2] == any_array[-1]
+
 else
 1
 end
