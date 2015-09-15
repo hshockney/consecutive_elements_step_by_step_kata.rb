@@ -56,17 +56,17 @@ find_max_consecutive_identical_elements(["a", "a", "b", "a"])
 assert_equal(2, results)
 end
 
- # def test_for_multiple_identical_elements
- # results=
- # find_max_consecutive_identical_elements([1, 2, 2, 2, 3, 3, 1, 1])
- # assert_equal(3, results)
- # end
+  def test_for_multiple_identical_elements
+  results=
+  find_max_consecutive_identical_elements([1, 2, 2, 2, 3, 3, 1, 1])
+  assert_equal(3, results)
+  end
 
-# def test_strings_for_identical_elements
-# results=
-# find_max_consecutive_identical_elements(["hello"])
-# assert_equal(2, results)
-# end
+ def test_strings_for_identical_elements
+ results=
+ find_max_consecutive_identical_elements(["this is easy"])
+ assert_equal(1, results)
+ end
 
 def test_for_sets_of_single_elements
 results=
@@ -80,40 +80,23 @@ find_max_consecutive_identical_elements([1, 2, 1, 2])
 assert_equal(1,results)
 end
 
+def test_for_identical_letters_in_string
+results=
+find_max_consecutive_identical_elements(["this is sooooooo hard"])
+assert_equal(7,results)
+end
 
+def test_for_multiple_identical_letters_in_string
+results=
+find_max_consecutive_identical_elements(["hello"])
+assert_equal(2,results)
+end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def test_for_string_with_multiple_identical_letters
+results=
+find_max_consecutive_identical_elements(["this is easy"])
+assert_equal(1,results)
+end
 
 
 
